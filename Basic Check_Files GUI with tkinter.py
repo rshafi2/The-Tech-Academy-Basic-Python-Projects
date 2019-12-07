@@ -27,6 +27,7 @@ class ParentWindow(Frame):
 
         
         # self.master here is the parent window and the options are affecting the properties of the window. 
+        
         self.master = master
         self.master.resizable(width=False, height=False)
         self.master.geometry('{}x{}'.format(490, 200))
@@ -40,6 +41,8 @@ class ParentWindow(Frame):
 
 
         # The following lines of code are for the four BUTTON WIDGETS inside of the Parent Window of the GUI. 
+        
+        
         self.btnBrowse1 = Button(self.master, text="Browse...", width=12, height=1) 
         self.btnBrowse1.grid(row=1, column=1, padx=(10,0) , pady=(30,0), sticky=NW)
 
@@ -52,8 +55,11 @@ class ParentWindow(Frame):
         self.btnCloseProgram = Button(self.master, text="Close Program", width=12, height=2)
         self.btnCloseProgram.grid(row=3, column=3, padx=(30,0), pady=(30,0), sticky=E)
 
+        
 
         # The following lines of code are for the two ENTRY WIDGETS inside of the Parent Window of the GUI.
+        
+        
         self.txtFName = Entry(self.master,text='', font=("Helvetica", 13), fg='black', bg='white', width="35")
         self.txtFName.grid(row=1, column=3,padx=(30,0), pady=(30,0))
 
@@ -62,8 +68,6 @@ class ParentWindow(Frame):
 
 
        
-
-
 
 
 

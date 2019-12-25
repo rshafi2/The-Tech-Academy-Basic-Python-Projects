@@ -16,12 +16,12 @@ class ParentWindow(Frame):
            Parent Window and places them in the window using the grid method."""
 
 
-        # The following lines of code are for the four BUTTON WIDGETS inside of the Parent Window of the GUI. 
+        # The following lines of code are for the BUTTON WIDGET inside of the Parent Window of the GUI. 
         self.btnBrowse1 = Button(self.master, text="Browse...", width=12, height=1, command=self.browse) 
         self.btnBrowse1.grid(row=1, column=1, padx=(10,0) , pady=(30,0), sticky=NW)
    
 
-        # The following lines of code are for the two ENTRY WIDGETS inside of the Parent Window of the GUI.
+        # The following lines of code are for the ENTRY WIDGET inside of the Parent Window of the GUI.
         self.txt = Entry(self.master,text='', font=("Helvetica", 13), fg='black', bg='white', width="25")
         self.txt.grid(row=1, column=3,padx=(30,0), pady=(30,0))
 

@@ -1,3 +1,29 @@
+#
+#
+# Python Version: 3.7.4
+#
+#
+# Author: Mohammad Shafi 
+#
+#
+# Purpose: Creating GUI using tkinter with a button and an entry widget which allows the user to browse the computers directory.
+#           The chosen directory path is finally inserted into the entry widget. 
+#
+#
+# Tested OS: This Code was written and tested to work with Windows 10. 
+#
+#
+
+
+
+import tkinter
+from tkinter import *
+import os
+import time 
+from tkinter import filedialog
+from tkinter import messagebox 
+
+
 class ParentWindow(Frame):
     def __init__ (self, master):
         Frame.__init__ (self)
@@ -27,13 +53,13 @@ class ParentWindow(Frame):
 
 
         """ The function below allows you to browse the computers directory and
-           inserts the chosen directory path into the entry widget. """
+           inserts the chosen directory filepath into the entry widget. """
 
     def browse(self):
         #msgBox = tkinter.messagebox.askquestion("Do you want to pick a directory?")
         msgBox = messagebox.askquestion(message='Do you want to select a directory?', icon='question', title='Open Directory')
         if msgBox == 'yes':
-            dirname = filedialog.askdirectory(parent=self.master,initialdir="/")
+            dirname = filedialog.askdirectory()
             self.txt.insert(0, dirname) 
         else:
             self.master.destroy()

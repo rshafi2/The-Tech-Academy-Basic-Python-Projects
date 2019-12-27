@@ -1,8 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
-# Python Ver:   3.5.1
-#
 #
 # Purpose:      Phonebook. Demonstrating OOP, Tkinter GUI module,
 #               using Tkinter Parent and Child relationships.

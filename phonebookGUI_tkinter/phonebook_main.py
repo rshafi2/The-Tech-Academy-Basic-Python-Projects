@@ -46,7 +46,7 @@ class ParentWindow(Frame):
         self.master.minsize(500,300) #(Height, Width)
         self.master.maxsize(500,300)
         # This CenterWindow method will center our app on the user's screen
-        drill50_phonebook_func.center_window(self,500,300)
+        phonebook_func.center_window(self,500,300)
         self.master.title("The Tkinter Phonebook Demo")
         self.master.configure(bg="#F0F0F0")
         # This protocol method is a tkinter built-in method to catch if 

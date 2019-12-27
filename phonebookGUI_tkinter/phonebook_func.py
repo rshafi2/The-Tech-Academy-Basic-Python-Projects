@@ -17,8 +17,8 @@ import sqlite3
 
 # Be sure to import our other modules 
 # so we can have access to them
-import drill50_phonebook_main
-import drill50_phonebook_gui
+import phonebook_main
+import phonebook_gui
 
 
 
